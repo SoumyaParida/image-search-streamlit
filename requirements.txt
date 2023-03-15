@@ -1,4 +1,4 @@
 google.auth
 pillow
 twilio
-googleapiclient
+google-api-python-client
