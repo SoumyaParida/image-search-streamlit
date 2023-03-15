@@ -3,3 +3,5 @@ pillow
 twilio
 google-api-python-client
 getfilelistpy
+oauth2client
+httplib2
