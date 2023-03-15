@@ -259,18 +259,7 @@ def main():
         			path = "https://drive.google.com/uc?export=view&id=" + img.get('id')
         			#print("path", path)
         			if path not in showimglist:
-                        imgid = imagepath.split("id=")[1]
-                        url = "https://drive.google.com/uc?export=download&id=" + imgid
-                        res = requests.get(url, stream = True)
-                        file_name = os.path.dirname(os.path.abspath(__file__)) + "/test.jpg"
-                        if res.status_code == 200:
-                            with open(file_name,'wb') as f:
-                                shutil.copyfileobj(res.raw, f)
-                                print('Image sucessfully Downloaded: ',file_name)
-                        else:
-                            print('Image Couldn\'t be retrieved')
-                            print("file_name", file_name)
-                            showimglist.append(file_name)
+        				showimglist.append(path)
         				#st.image(path, caption=path)
 
 
