@@ -20,8 +20,6 @@ import streamlit as st
 import templates
 from PIL import Image
 
-from alright import WhatsApp
-
 import os
 from twilio.rest import Client
 
