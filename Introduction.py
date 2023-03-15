@@ -80,7 +80,7 @@ def share_whatsapp():
     from_whatsapp_number="whatsapp:+14155238886"
     to_whatsapp_number="whatsapp:+919937266747"
     message = client.messages.create(body='Ignore this..',
-                       media_url=[file_name],
+                       media_url=["https://nystudio107.com/img/blog/_1200x675_crop_center-center_82_line/image_optimzation.jpg"],
                        from_=from_whatsapp_number,
                        to=to_whatsapp_number)
     print(message.sid)
