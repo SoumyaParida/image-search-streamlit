@@ -28,7 +28,7 @@ from twilio.rest import Client
 #auth_token = os.environ['TWILIO_AUTH_TOKEN']
 
 account_sid = "AC2f38b621802a9918bbeecb783b2728f3"
-auth_token = "c8983bef7638feeb0d0d76700f5f544e"
+auth_token = "171b49b48eeb67ce7e014aaa0874488d"
 
 
 client = Client(account_sid, auth_token)
@@ -80,7 +80,7 @@ def share_whatsapp():
     from_whatsapp_number="whatsapp:+14155238886"
     to_whatsapp_number="whatsapp:+919937266747"
     message = client.messages.create(body='Ignore this..',
-                       media_url=["https://nystudio107.com/img/blog/_1200x675_crop_center-center_82_line/image_optimzation.jpg"],
+                       media_url=[file_name],
                        from_=from_whatsapp_number,
                        to=to_whatsapp_number)
     print(message.sid)
